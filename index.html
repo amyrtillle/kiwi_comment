@@ -3,18 +3,22 @@
 
 <head>
   <meta charset="utf-8">
+  <meta lang="fr">
   <meta name="viewport" content="width=device-width">
-  <title>Ouiqui Who</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link rel="icon" href=".png">
+
+  <link href="./css/style.css" rel="stylesheet" type="text/css" />
+  <link href="./css/header-footer.css" rel="stylesheet" type="text/css" />
+  <link href="./css/cookie.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="./medias/logo.svg">
+
+  <title>kiwi comment</title>
 </head>
 
 <body>
-
-  <img src="" alt=>
   <header>
-  <h1>Accueil</h1>
-    
+    <img id="logo" src="./medias/logo_text.png" alt="logo">
+
+    <h1>Accueil</h1>
     <nav>
       <ul>
         <li>Les tutos</li>
@@ -24,9 +28,9 @@
         <li>Nos offres premium</li>
       </ul>
     </nav>
+
   </header>
 
-  
 
 
 
@@ -35,13 +39,27 @@
 
 
 
+
+  <div id="cookiePopup">
+    <h4><span id="cookie-text"><img class="cookie-img" src="./medias/Cookie.svg">Utilisation des cookies</span></h4>
+    <p>Ce site utilise des cookies ou une technologie similaire, pour améliorer votre expérience et vous proposer des
+      résultats personnalisés, veuillez accepter notre <a href="./confidentialite.html">Politique de
+        confidentialité</a>.</p>
+    <button id="acceptCookie">Accepter</button>
+  </div>
 
   <footer>
-    
+    <nav>
+      <ul>
+        <li>Aide</li>
+        <li>Nous contacter</li>
+        <li>Conditions d'utilisations</li>
+      </ul>
+    </nav>
   </footer>
 
-  
-  <script src="script.js"></script>
+
+  <script src="./js/cookies.js"></script>
 </body>
 
 </html>

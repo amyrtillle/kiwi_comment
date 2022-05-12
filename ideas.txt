@@ -1,0 +1,20 @@
+barre de recherche
+
+gros pop  up de mort pour la newsletter
+
+captcha avec des tracteurs des avions et des lamborghini ?
+
+footer avec :
+      - ca c'est fait (à peu près): aide
+      - ca c'est fait (à peu près) nous contacter  
+
+
+Javascript:
+      - Tri des tutos par catégorie (date, auteur, ...)
+      - Formulaire (newsletter, inscriptions, ...)
+
+      - ca c'est fait : Conditions d'utilisation: miam cookies 
+
+A faire:
+      - Base de donnée
+      -
