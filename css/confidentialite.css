@@ -2,3 +2,11 @@
   text-decoration: underline;
   font-weight: bold;
 }
+
+#confidentialité{
+  display:border-box;
+  border-radius:5px;
+  background-color:light grey;
+  width:500px;
+  height:800px;
+}
