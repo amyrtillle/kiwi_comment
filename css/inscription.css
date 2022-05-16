@@ -1,0 +1,28 @@
+#formulaire{
+  width: 600px;
+  margin-bottom: auto;
+  border-color:#DEDEDE;
+  background-color:#DEDEDE;
+  border:none;
+  color:black;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius:5px;
+}
+
+#info{
+  height:50px;
+  width: 600px;
+  font-size: 1em;
+  border-radius:50px;
+  border:none;
+  margin-bottom:15px;
+}
+
+h1{
+  text-align:center;
+}
+
+main{
+  margin-top:100px;
+}

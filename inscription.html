@@ -6,11 +6,10 @@
   <meta lang="fr">
   <meta name="viewport" content="width=device-width">
 
-  <link href="./css/style.css" rel="stylesheet" type="text/css" />
-  <link href="./css/header-footer.css" rel="stylesheet" type="text/css" />
-  <link href="./css/cookie.css" rel="stylesheet" type="text/css" />
-  <link href="./libs/bootstrap.min.css" rel="stylesheet" type="text/css" />
-  <link href="./libs/font-awesome.min.css" rel="stylesheet" type="text/css" />
+  <link href="./css/style.css" rel="stylesheet" type="text/css">
+  <link href="./css/header-footer.css" rel="stylesheet" type="text/css">
+  <link href="./css/cookie.css" rel="stylesheet" type="text/css">
+  <link href="./css/inscription.css" rel="stylesheet" type="text/css">
   
   <link rel="icon" href="./medias/logo.svg">
 
@@ -18,30 +17,132 @@
 </head>
 
 <body>
+  <header id="header">
+	<nav class="links" style="--items: 7;">
+    <a href="./index.html"><img class="logo_img" src="./medias/logo_text.png"></a>
+    <a href="#"><input type="text" class="navsearch" placeholder="Recherche.."></a>
+		<a href="./all.html">Les tutos</a>
+		<a href="./contact.html">Contact</a>
+    <a href="./connect.html">Se connecter</a>
+		<a href="./inscription.html">S'inscrire</a>
+    <a href="./premium.html">Nos offres premium</a>
+		<span class="line"></span>
+	</nav>
+</header>
 
+  <main>
+<div >
+  
   <form action="contact.php" method="POST">
-    <label>ID</label> <br>
-    <input type="text" name="ID"> <br>
 
+    <h1>Inscription</h1>
+
+    <fieldset id="formulaire">
+    
     <label>Nom</label> <br>
-    <input type="text" name="nom"> <br>
+    <input id="info" type="text" name="nom" required> <br>
 
     <label>Prénom</label> <br>
-    <input type="text" name="prenom"> <br>
+    <input id="info" type="text" name="prenom" required> <br>
 
-    <label>Pseudo</label> <br>
-    <input type="text" name="pseudo"> <br>
+    <label>Nom d'utilisateur</label> <br>
+    <input id="info" type="text" name="pseudo" required minlenght="3" maxlength="15"> <br>
+
+    <label>Adresse e-mail</label> <br>
+    <input id="info" type="text" name="email" required> <br>
 
     <label>Date de naissance</label> <br>
-    <input type="text" name="birth"> <br>
+    <input id="info" type="text" name="birth" required> <br>
 
     <label>Centres d'intérêts</label> <br>
-    <input type="text" name="tag"> <br>
+
+    <div>
+      <input type="checkbox" id="santé" name="tag" value="Santé">
+      <label for="santé">Santé</label>
+    </div>
+
+    <div>
+      <input type="checkbox" scolarité" name="tag" value="scolarité">
+      <label for="scolarité">Scolarité</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="Sport" name="tag" value="Sport">
+      <label for="Sport">Sport</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="Art" name="tag" value="Art">
+      <label for="Art">Art</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="Cuisine" name="tag" value="Cuisine">
+      <label for="Cuisine">Cuisine</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="Social" name="tag" value="Social">
+      <label for="Social">Social</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="Nature" name="tag" value="Nature">
+      <label for="Nature">Nature</label>
+    </div>
+
+     <div>
+      <input type="checkbox" id="Jeux" name="tag" value="Jeux">
+      <label for="Jeux">Jeux</label>
+    </div>
+   
 
 
-    <input type="submit" value="Ajouter" name="ok">
+    <input type="submit" value="S'inscrire" name="ok">
+
+    </fieldset>
 </form>
 
+</div>
+</main>
+  <footer>
+    <nav class="links" style="--items: 3;">
+      <div>
+        <form action="newsletter.php" method="post">
+        <input type="email" class="navsearch" placeholder="S'inscrire à la newletter">
+          <input type="submit" value="S'inscrire" name="submit_form"/>
+        </form>
+      </div>
 
+
+
+    <table>
+    <tr>
+        <td class="colonnefooter"><a href="./help.html">Aide</a></td>
+    </tr>
+    <tr>
+        <td class="colonnefooter"><a href="./contact.html">Nous contacter</a></td>
+    </tr>
+      <tr>
+        <td class="colonnefooter"> <a href="./confidentialite.html">Conditions d'utilisations</a></td>
+    </tr>
+</table>
+
+
+
+    <table>
+    <tr>
+      <td class="colonnefooter" class="icons"><a href="http://facebook.com" target="_blank" ><img src="./medias/facebook-app-symbol.png" class="icon" alt="logo_facebook"> </a></td>
+      <td class="colonnefooter" class="icons"><a href="http://youtube.com" target="_blank" ><img src="./medias/youtube.png" class="icon" alt="logo_youtube"></a></td>
+      <td class="colonnefooter" class="icons"><a href="http://instagram.com" target="_blank" ><img src="./medias/instagram-logo.png" class="icon" alt="logo_instagram"></a></td>
+      <td class="colonnefooter" class="icons"><a href="http://twitter.com" target="_blank" ><img src="./medias/twitter.png" class="icon" alt="logo_twitter"></a></td>
+    </tr>
+</table>
+
+    
+   
+  </nav>
+</footer>
+  
 </body>
-</html>
+</html>    
