@@ -1,0 +1,24 @@
+#titre{
+  margin-bottom:70px;
+}
+
+.titre1{
+  margin-bottom: 40px;
+}
+
+blockquote{
+  text-decoration: underline;
+  color: grey;
+}
+
+blockquote > a:visited{
+  color: grey;
+}
+
+.content{
+  padding-bottom: 80px;
+}
+
+.illu{
+  border-radius: 10px;
+}

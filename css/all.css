@@ -1,0 +1,38 @@
+.all {
+display: grid; 
+
+   grid-template-rows: 1fr 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   
+   gap: 0px;
+   height: 100%;
+
+  padding-bottom: 100px;
+
+}
+
+main{
+  padding: 20px;
+}
+
+.art{
+  text-align: center;
+}
+
+.couverture{
+  margin-top: 80px;
+  max-width: 90%;
+  width: 358px;
+  height: 268px;
+
+}
+
+.art > a{
+  text-decoration: none;
+  color: black;
+}
+
+.art > a:visited{
+  text-decoration: none;
+  color: black;
+}

@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+body{
+  font-family: Nunito;
+}
+
 #cookiePopup {
     background: white;
     width: 25%;

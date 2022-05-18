@@ -10,10 +10,13 @@
   <link href="./css/header-footer.css" rel="stylesheet" type="text/css">
   <link href="./css/cookie.css" rel="stylesheet" type="text/css">
   <link href="./css/inscription.css" rel="stylesheet" type="text/css">
+
+  <link href="./libs/magnific-popup.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./libs/bootstrap.min.css">
   
   <link rel="icon" href="./medias/logo.svg">
 
-  <title>kiwi Comment</title>
+  <title>kiwi Comment s'inscrire</title>
 </head>
 
 <body>
@@ -31,28 +34,110 @@
 </header>
 
   <main>
-<div >
+<div>
+
+  <form action="inscription_traitement.php" method="post">
+    
+                <h2 class="text-center">Inscription</h2>    
+
+                <div class="form-group">
+                    <input type="text" name="nom" class="form-control" placeholder="Nom" required="required" autocomplete="off">
+                </div>
+
+                <div class="form-group">
+                    <input type="text" name="prenom" class="form-control" placeholder="Prénom" required="required" autocomplete="off">
+                </div>
+    
+                <div class="form-group">
+                    <input type="text" name="pseudo" class="form-control" placeholder="Pseudo" required="required" autocomplete="off">
+                </div>
+
+                <div class="form-group">
+                    <input type="email" name="email" class="form-control" placeholder="Email" required="required" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <input type="password" name="password" class="form-control" placeholder="Mot de passe" required="required" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <input type="password" name="password_retype" class="form-control" placeholder="Re-tapez le mot de passe" required="required" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-block">Inscription</button>
+                </div>  
+                  <label>Centres d'intérêts</label> <br>
+
+    <div>
+      <input type="checkbox" id="santé" name="tag" value="Santé">
+      <label for="santé">Santé</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="scolarité" name="tag" value="scolarité">
+      <label for="scolarité">Scolarité</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="Sport" name="tag" value="Sport">
+      <label for="Sport">Sport</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="Art" name="tag" value="Art">
+      <label for="Art">Art</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="Cuisine" name="tag" value="Cuisine">
+      <label for="Cuisine">Cuisine</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="Social" name="tag" value="Social">
+      <label for="Social">Social</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="Nature" name="tag" value="Nature">
+      <label for="Nature">Nature</label>
+    </div>
+
+     <div>
+      <input type="checkbox" id="Jeux" name="tag" value="Jeux">
+      <label for="Jeux">Jeux</label>
+    </div>
+
+    </form>
+
+            
+        </div>
+
   
-  <form action="contact.php" method="POST">
+<!--<form action="inscription.php" method="POST">
 
     <h1>Inscription</h1>
 
     <fieldset id="formulaire">
     
-    <label>Nom</label> <br>
+    <label>Nom*</label> <br>
     <input id="info" type="text" name="nom" required> <br>
 
-    <label>Prénom</label> <br>
+    <label>Prénom*</label> <br>
     <input id="info" type="text" name="prenom" required> <br>
 
-    <label>Nom d'utilisateur</label> <br>
+    <label>Nom d'utilisateur*</label> <br>
     <input id="info" type="text" name="pseudo" required minlenght="3" maxlength="15"> <br>
 
-    <label>Adresse e-mail</label> <br>
-    <input id="info" type="text" name="email" required> <br>
+    <label>Adresse e-mail*</label> <br>
+    <input id="info" type="email" name="email" placeholder="Example@mail.com" required> <br>
 
-    <label>Date de naissance</label> <br>
-    <input id="info" type="text" name="birth" required> <br>
+    <label>Date de naissance*</label> <br>
+    <input id="info" type="date" name="birth" required> <br>
+
+    <label>Mot de passe*</label> <br>
+    <input id="info" type="password" name="password" required> <br>
+
+    <label>Confirmer mot de passe*</label> <br>
+    <input id="info" type="password" name="password" required> <br>
 
     <label>Centres d'intérêts</label> <br>
 
@@ -62,7 +147,7 @@
     </div>
 
     <div>
-      <input type="checkbox" scolarité" name="tag" value="scolarité">
+      <input type="checkbox" id="scolarité" name="tag" value="scolarité">
       <label for="scolarité">Scolarité</label>
     </div>
 
@@ -101,7 +186,7 @@
     <input type="submit" value="S'inscrire" name="ok">
 
     </fieldset>
-</form>
+</form> -->
 
 </div>
 </main>

@@ -2,7 +2,7 @@
     
     try 
     {
-        $bdd = new PDO("mysql:host=toto;dbname=Kiwi;charset=utf8", "CHANGER_LOGIN", "CHANGER_PASS");
+        $bdd = new PDO("mysql:host=localhost;dbname=Kiwi;charset=utf8", "toto", "chef");
     }
     catch(PDOException $e)
     {

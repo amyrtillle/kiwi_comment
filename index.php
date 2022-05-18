@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-    <html lang="en">
+    <html>
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <meta name="author" content="NoS1gnal"/>
 
-            <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+            <link href="./libs/magnific-popup.min.css" rel="stylesheet" />
+            <link rel="stylesheet" href="./libs/bootstrap.min.css">
+
             <title>Connexion</title>
         </head>
         <body>
         
         <div class="login-form">
-             <?php 
+             <?php
                 if(isset($_GET['login_err']))
                 {
                     $err = htmlspecialchars($_GET['login_err']);
@@ -22,7 +22,7 @@
                         case 'password':
                         ?>
                             <div class="alert alert-danger">
-                                <strong>Erreur</strong> mot de passe incorrect
+                                <strong>Erreur</strong> Mot de passe incorrect
                             </div>
                         <?php
                         break;
@@ -30,7 +30,7 @@
                         case 'email':
                         ?>
                             <div class="alert alert-danger">
-                                <strong>Erreur</strong> email incorrect
+                                <strong>Erreur</strong> Email incorrect
                             </div>
                         <?php
                         break;
@@ -38,15 +38,15 @@
                         case 'already':
                         ?>
                             <div class="alert alert-danger">
-                                <strong>Erreur</strong> compte non existant
+                                <strong>Erreur</strong> Compte non existant
                             </div>
                         <?php
                         break;
                     }
                 }
-                ?> 
+                ?>
             
-            <form action="connexion.php" method="post">
+           <form action="connexion.php" method="post">
                 <h2 class="text-center">Connexion</h2>       
                 <div class="form-group">
                     <input type="email" name="email" class="form-control" placeholder="Email" required="required" autocomplete="off">
@@ -83,5 +83,6 @@
                 font-weight: bold;
             }
         </style>
+
         </body>
 </html>
