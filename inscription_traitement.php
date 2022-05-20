@@ -3,9 +3,10 @@
 
     if(!empty($_POST['pseudo']) && !empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['password_retype'] && !empty($_POST['centres_interets'])))
     {
-	$nom = htmlspecialchars($_POST['nom']);
-	$prenom = htmlspecialchars($_POST['prenom']);
+	    $nom = htmlspecialchars($_POST['nom']);
+	    $prenom = htmlspecialchars($_POST['prenom']);
         $pseudo = htmlspecialchars($_POST['pseudo']);
+        $image = htmlspecialchars($_POST['image']);
         $email = htmlspecialchars($_POST['email']);
         $password = htmlspecialchars($_POST['password']);
         $password_retype = htmlspecialchars($_POST['password_retype']);
@@ -13,7 +14,7 @@
 
         $email = strtolower($email);
         
-        $check = $bdd->prepare('SELECT pseudo, email, password, nom, prenom, centres_interets FROM utilisateurs WHERE email = ?');
+        $check = $bdd->prepare('SELECT pseudo, image, email, password, nom, prenom, centres_interets FROM utilisateurs WHERE email = ?');
         $check->execute(array($email));
         $data = $check->fetch();
         $row = $check->rowCount();
@@ -32,12 +33,12 @@
                             $ip = $_SERVER['REMOTE_ADDR']; 
 
 
-                            $insert = $bdd->prepare('INSERT INTO utilisateurs(nom, prenom, pseudo, email, password, centres_interets, ip, token) 
-                                                                    VALUES(:nom, :prenom, :pseudo, :email, :password, :centres_interets, :ip, :token)');
+                            $insert = $bdd->prepare('INSERT INTO utilisateurs(nom, prenom, pseudo, image, email, password, centres_interets, ip, token) VALUES(:nom, :prenom, :pseudo, :image, :email, :password, :centres_interets, :ip, :token)');
                             $insert->execute(array(
                                 'nom' => $nom,
                                 'prenom' => $prenom,
                                 'pseudo' => $pseudo,
+                                'image' => $image,
                                 'email' => $email,
                                 'password' => $password,
                                 'centres_interets' => $centres_interets,

@@ -39,3 +39,7 @@ margin: auto;
   display: inline-block;
   font-size: 16px;
 }
+
+.offersbutton:hover{
+  cursor: grab;
+}
