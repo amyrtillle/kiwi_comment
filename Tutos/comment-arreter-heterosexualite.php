@@ -18,7 +18,7 @@
 
     <link rel="icon" href="/medias/logo.svg">
 
-    <title>kiwi Comment monter son meuble Aeki</title>
+    <title>kiwi Comment arrêter l'heterosexualité</title>
 </head>
 
 <body>
@@ -27,7 +27,7 @@
         <a href="/index.php"><img class="logo_img" src="/medias/logo_text.png"></a>
         <a href="#"><input type="text" class="navsearch" placeholder="Recherche.."></a>
         <a href="/all.php">Les tutos</a>
-        <a href="/connexion.php">Contact</a>
+        <a href="/contact.php">Contact</a>
         <?php
         session_start();
         if($_SESSION['email']==true){
@@ -53,33 +53,18 @@
 <main class="content">
 
 
-    <h1 id="titre">Comment monter son meuble ft <a href="https://b12.gremmi.fr">Aeki</a> </h1>
+    <h1 id="titre">Comment arrêter l'heterosexualité</h1>
 
-    <h3>1- Achetez votre meuble chez aeki</h3>
-    <p> Une qualité incroyable avec des prix plus qu'abordables, des meubles de QUA-LI-TEY.
-        Un magasin mieux qu'Ikea, non aeki n'est PAS un plagiat d'Ikea, certes il vend aussi des meubles mais ça ne veut rien dire,
-        oui bon peut-être qu'Aeki en verlan donne Ikea mais non je n'aurai pas dû dire ça oubliez,
-        dans tous les cas ce n'est qu'un concours de CIR-CON-STANCES
-        <br>Quoi vous pensez que c'est un contenu sponsorisé? Ok j'avoue c'est le cas, bravo vous êtes vraiment trop doué.e HAHA,
-        non mais sérieusement il faut bien financer notre site, achetez notre contenu premium si vous êtes pas contents non mais oh. </p>
+    <p> Etre hétérosexuel n'est pas la vie que vous devez mener, devenez gay
+    </p>
+    <h3>1- HAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA  </h3>
 
-    <img class="illu" src="/medias/aeki2.jpg">
+    <h3>2- ... </h3>
 
-    <h3>2- Ramenez le meuble chez vous  </h3>
-    <p> Faites bien attention à ne pas abimer votre meuble avant même de l'avoir ouvert. Conduisez sagement et vérifiez que votre meuble est bien placé dans la voiture. </p>
+    <h3>3- jsp</h3>
 
-    <h3>3- Ouvrez le manuel</h3>
-    <p> Chaque meuble a un manuel qui vous guidera tout le long du processus du montage de votre meuble Aeki. N'importe qui peut lire et comprendre ce manuel
-    car il est essentiellement illustré, si vous avez déjà monté des legos vous savez de quoi ce tuto parle.</p>
 
-    <h3>4- Suivez attentivement les instructions et arrangez vos pièces détachées</h3>
-    <p> Ne mélangez surtout pas les différents pièces de votre meuble ou vous allez perdre votre temps à vous y retrouver.
-        Soyez délicats dans vos manoeuvres pour éviter de casser quelque chose</p>
 
-    <h3>5- Vérifiez que votre meuble est bien monté avant de l'installer</h3>
-    <p>Pour éviter un accident quelconque, vérifiez d'abord que votre meuble est solide. Si c'est le cas alors félicitations votre meuble aeki est enfin monté!
-    Vous pouvez maintenant l'installer là où vous voulez!</p>
-    
 
 
 
@@ -108,9 +93,9 @@
 <footer>
     <nav class="links" style="--items: 3;">
         <div>
-            <form action="newsletter.php" method="post">
-                <input type="email" class="navsearch" placeholder="S'inscrire à la newletter">
-                <input type="submit" value="S'inscrire" name="submit_form"/>
+            <form action="newsletter_traitement.php" method="post">
+                <input type="email" class="navsearch" name="email_news" placeholder="S'inscrire à la newletter">
+                <button type="submit">S'inscire</button>
             </form>
         </div>
 

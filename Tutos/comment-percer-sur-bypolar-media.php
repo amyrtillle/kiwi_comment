@@ -31,19 +31,19 @@
         <?php
         session_start();
         if($_SESSION['email']==true){
-            echo '<a href="./landing.php">'.$_SESSION["email"].'</a>';
+            echo '<a href="../landing.php">'.$_SESSION["pseudo"].'</a>';
         }
         elseif($_SESSION['email']==false)
-            echo '<a href="./connexion.php"><span>se connecter</span></a></li>';
+            echo '<a href="../connexion.php"><span>se connecter</span></a></li>';
         ?>
 
         <?php
         session_start();
         if($_SESSION['email']==true){
-            echo '<a href="./deconnexion.php"><span>Se déconnecter</span>';
+            echo '<a href="../deconnexion.php"><span>Se déconnecter</span>';
         }
         elseif($_SESSION['email']==false)
-            echo '<a href="./inscription.php"><span>S inscire</span></a></li>';
+            echo '<a href="../inscription.php"><span>Inscrivez-vous</span></a></li>';
         ?>
         <a href="/premium.php">Nos offres premium</a>
         <span class="line"></span>
@@ -55,16 +55,17 @@
 
     <h1 id="titre">Comment percer sur <a href="https://b3.gremmi.fr">Bypolar Media? </a></h1>
 
-    <p> Oui
+    <p> Bypolar Media est un réseau social totalement
     </p>
     <h3>1- Créez votre compte Bypolar</h3>
-    <p> </p>
+    <p> Pensez à mettre une photo de profil et une bio intéressante qui pourrait attirer des gens. </p>
 
     <h3>2- Faites un premier post  </h3>
-    <p> Jsp je vais dire un truc</p>
+    <p> Présentez-bous, ou partagez une de vos passions/ centres d'intérêts, ou donnez une anecdote sur vous
+         qui pourrait vous introduire à une communauté</p>
 
     <h3>3- Likez, dislikez et commentez </h3>
-    <p> interactionnnnnnnnnnnnnnnnnnnnnnn</p>
+    <p> Pour gagner en popularité, vous devez discuter et intéragir avec le plus de monde possible.  </p>
 
 
 

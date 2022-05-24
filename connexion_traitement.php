@@ -15,7 +15,7 @@ if(isset($_POST['email'])){
     } catch (PDOException $e) {
         die ("Failed: " . $e);
     }
-    $query = 'SELECT password, email FROM utilisateurs WHERE email = ?;';
+    $query = 'SELECT * FROM utilisateurs WHERE email = ?;';
     $reqSub = $conn->prepare($query);
     $res=$reqSub->execute([$_POST['email']]);
     $conn->query('KILL CONNECTION_ID()');
@@ -25,10 +25,17 @@ if(isset($_POST['email'])){
     else{
 
         $row = $reqSub->fetchAll();
-        var_dump($row);
+
         if(isset($row[0]['password'])){
             if ($_POST["password"] == $row[0]['password']) {
                 $_SESSION["email"] = $row[0]['email'];
+                $_SESSION["ip"] = $row[0]['ip'];
+                $_SESSION["prenom"] = $row[0]['prenom'];
+                $_SESSION["pp"] = $row[0]['pp'];
+                $_SESSION["nom"] = $row[0]['nom'];
+                $_SESSION["pseudo"] = $row[0]['pseudo'];
+                $_SESSION["pp_type"] = $row[0]['pp_type'];
+
 
                 header("Location: landing_traitement.php");
                 exit();

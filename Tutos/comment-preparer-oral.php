@@ -31,19 +31,19 @@
         <?php
         session_start();
         if($_SESSION['email']==true){
-            echo '<a href="./landing.php">'.$_SESSION["email"].'</a>';
+            echo '<a href="../landing.php">'.$_SESSION["pseudo"].'</a>';
         }
         elseif($_SESSION['email']==false)
-            echo '<a href="./connexion.php"><span>se connecter</span></a></li>';
+            echo '<a href="../connexion.php"><span>se connecter</span></a></li>';
         ?>
 
         <?php
         session_start();
         if($_SESSION['email']==true){
-            echo '<a href="./deconnexion.php"><span>Se déconnecter</span>';
+            echo '<a href="../deconnexion.php"><span>Se déconnecter</span>';
         }
         elseif($_SESSION['email']==false)
-            echo '<a href="./inscription.php"><span>S inscire</span></a></li>';
+            echo '<a href="../inscription.php"><span>Inscrivez-vous</span></a></li>';
         ?>
     <a href="/premium.php">Nos offres premium</a>
 		<span class="line"></span>
@@ -60,9 +60,19 @@
         les lieux, les personnages, etc...</p>
 
 
-<h3>2- Notez ce que vous allez dire et montrer </h3>
+<h3>2- Notez ce que vous allez dire et montrer sur votre diaporama professionnel </h3>
+<p>Un oral doit être préparé en avance. Son contenu doit être organisé car vous devrez parlez devant des spectateurs.
+</p>
 
-<h3>3- </h3>
+<h3>3-Retenez les mots clés </h3>
+    <p> Ne prenez pas tout en note de ce que vous allez dire, en écrivant l'intégralité de votre oral sous forme de notes vous risquez
+    de lire complètement vos notes sans jeter un coup d'oeil à votre auditoire. </p>
+
+    <h3>4- Pensez aux spectateurs</h3>
+    <p>Il ne s'agit pas d'un travail à l'écrit où les personnes peuvent relire ou faire une pause pour comprendre. Donnez leur donc des moments de réflexion
+    Ne parlez pas trop vite et laisser des blancs pauvent parfois être bénéfiques. Vous pouvez aussi leur sourire, poser des questions, faire des blagues
+    cela aide à attirer l'attention et à détendre l'atmosphère.</p>
+
 
 
 

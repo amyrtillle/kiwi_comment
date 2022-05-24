@@ -31,19 +31,19 @@
         <?php
         session_start();
         if($_SESSION['email']==true){
-            echo '<a href="./landing.php">'.$_SESSION["email"].'</a>';
+            echo '<a href="../landing.php">'.$_SESSION["pseudo"].'</a>';
         }
         elseif($_SESSION['email']==false)
-            echo '<a href="./connexion.php"><span>se connecter</span></a></li>';
+            echo '<a href="../connexion.php"><span>se connecter</span></a></li>';
         ?>
 
         <?php
         session_start();
         if($_SESSION['email']==true){
-            echo '<a href="./deconnexion.php"><span>Se déconnecter</span>';
+            echo '<a href="../deconnexion.php"><span>Se déconnecter</span>';
         }
         elseif($_SESSION['email']==false)
-            echo '<a href="./inscription.php"><span>S inscire</span></a></li>';
+            echo '<a href="../inscription.php"><span>Inscrivez-vous</span></a></li>';
         ?>
     <a href="/premium.php">Nos offres premium</a>
 		<span class="line"></span>
@@ -53,13 +53,20 @@
 <main class="content">
 
 
+
 <h1 id="titre">Comment respirer</h1>
 <div>
 
 <h2 class="titre1">Comment marche la respiration? </h2>
-<p>oui </p>
+<p>La respiration est une fonction biologique qui permet aux êtres vivants d'utiliser leurs réserves énergétiques grâce à des échanges gazeux avec le milieu extérieur.
+    De très nombreux organismes respirent : bactéries, végétaux, champignons, animaux, etc. La respiration fait à la fois référence :
+    au processus biochimique qui se déroule à l'intérieur de la cellule, la respiration cellulaire ;
+    au transfert des gaz de l'extérieur de l’organisme vers la cellule ou inversement.
+    Autant la respiration est une fonction qui accompagne la vie depuis ses origines, autant elle ne s'est pas exprimée
+    dans les mêmes conditions au cours de l'histoire de la Terre, connaissant ou induisant parfois de profonds bouleversements.
+    Elle contribue de manière déterminante aux principaux cycles biogéochimiques. </p>
 
-<blockquote>Source: <a href="https://fr.wikipedia.org/wiki/Yaourt" target="_blank">Wikipédia</a></blockquote>
+<blockquote>Source: <a href="https://fr.wikipedia.org/wiki/Respiration" target="_blank">Wikipédia</a></blockquote>
 </div>
 
 <div>
@@ -68,11 +75,12 @@
 
 
 <h3>1- Faites entrer l'air par le nez</h3>
-<img class="illu" src="/medias/opercule.jpg">
+<img class="illu" src="/medias/breathe2.jpg">
   
 <p>Pour vous aider vous pouvez regarder votre ventre, il va se gonfler lorsque vous inspirez de l'air. </p>
 
 <h3>2- Laisser l'air ressortir par votre bouche </h3>
+    <img class="illu" src="/medias/breathe3.jpg">
   <p> Comme pour la première étape, vous pouvez regarder votre ventre qui va dégonfler lorsque l'air va sortir de votre corps. </p>
 
 

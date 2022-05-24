@@ -15,6 +15,72 @@ main{
   padding: 20px;
 }
 
+
+.filter-controls{
+    position:relative;
+    margin-top:130px;
+    border: 5px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+}
+
+.filter-controls button {
+    border: none;
+    background: white;
+    border-radius: 40px;
+    padding: 5px 10px 5px 10px;
+    font-size : 1.1em;
+    color:grey;
+
+    margin-left:5px;
+    margin-right:5px;
+
+    cursor: pointer;
+    outline: none;
+
+    transition: 0.1s all;
+}
+
+
+.hover:hover {
+    border: none;
+    background: white;
+    font-size : 1.1em;
+    color:#89B423;
+}
+
+.hover:active {
+    transform: scale(1.2)
+}
+
+.hover:focus{
+    border: none;
+    background: white;
+    font-size : 1.1em;
+    color:#89B423;
+}
+
+.hidden{
+    display:none;
+}
+
+.filter-list.all li{
+    list-style: none;
+}
+
+.filter-list.all a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+ul{
+    text-align: center;
+}
+
 .art{
   text-align: center;
 }
@@ -24,7 +90,13 @@ main{
   max-width: 90%;
   width: 358px;
   height: 268px;
+    transition: width 0.1s, height 0.1s, max-width 0.1s, transform 0.1s;
+}
 
+.couverture:hover{
+    max-width: 800%;
+    width: 380px;
+    height: 280px;
 }
 
 .art > a{

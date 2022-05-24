@@ -18,7 +18,7 @@
 
     <link rel="icon" href="/medias/logo.svg">
 
-    <title>kiwi Comment prendre soin de sa plante</title>
+    <title>kiwi Comment demander de l'aide</title>
 </head>
 
 <body>
@@ -43,7 +43,7 @@
             echo '<a href="./deconnexion.php"><span>Se déconnecter</span>';
         }
         elseif($_SESSION['email']==false)
-            echo '<a href="./inscription.php"><span>S inscire</span></a></li>';
+            echo '<a href="./inscription.php"><span>Inscrivez-vous</span></a></li>';
         ?>
         <a href="/premium.php">Nos offres premium</a>
         <span class="line"></span>
@@ -53,31 +53,32 @@
 <main class="content">
 
 
-    <h1 id="titre">Comment prendre soin de sa plante ft ?</h1>
+    <h1 id="titre">Comment demander de l'aide</h1>
+    <div>
 
-    <p></p>
+        <p>MORT </p>
+    </div>
 
-    <h3>1- Achetez une plante appropriée à votre environnement</h3>
-    <p> Tout d'abord, observez votre entourage, vivez-vous dans un appartement? Une maison dans le sud, ou dans le Nord?..
-        Les plantes n'ont pas toutes leurs mêmes caractéristiques et certaines auront tendance à plus s'en sortir là où d'autres vont mourir.
-        Choisissez donc bien votre plante avec considération. </p>
+    <div>
 
-    <h3>2- Placez-la dans un endroit approprié  </h3>
-    <p> </p>
-
-    <h3>3- Arrosez-là avec une quantité d'eau appropriée </h3>
-    <p> Toutes les plantes n'ont pas le même besoin en arrosage, prenez par exemple un cactus qui est une plante vivant dans des milieux désertiques
-        et une chrysanthème qui a besoin d'un sol humide pour se développer correctement.Vous n'allez donc pas noyer le cactus sous 3L d'eau
-        et ne rien donner à la chrysanthème pas vrai?</p>
+        <h2 class="titre1">Tutoriel</h2>
 
 
+        <h3>Crier très fort "aled"</h3>
+        <img class="illu" src="/medias/help2.jpg">
+
+        <p>Pour attirer l'attention des gens autour de soi</p>
+
+        <h3>2-Pleurer beaucoup</h3>
+        <img class="illu" src="/medias/help3.jpg">
+        <p> C'est pas si mal de pleurer tkt </p>
 
 
+        <h3>3- Se mettre en Position Latérale de Sécurité </h3>
+        <p> Les gens verront votre désespoir.</p>
 
 
-
-
-
+    </div>
 
 
     <div id="cookiePopup">
@@ -136,4 +137,4 @@
 
 </body>
 
-</html>
+</html> monde

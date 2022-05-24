@@ -31,19 +31,19 @@
         <?php
         session_start();
         if($_SESSION['email']==true){
-            echo '<a href="./landing.php">'.$_SESSION["email"].'</a>';
+            echo '<a href="../landing.php">'.$_SESSION["pseudo"].'</a>';
         }
         elseif($_SESSION['email']==false)
-            echo '<a href="./connexion.php"><span>se connecter</span></a></li>';
+            echo '<a href="../connexion.php"><span>se connecter</span></a></li>';
         ?>
 
         <?php
         session_start();
         if($_SESSION['email']==true){
-            echo '<a href="./deconnexion.php"><span>Se déconnecter</span>';
+            echo '<a href="../deconnexion.php"><span>Se déconnecter</span>';
         }
         elseif($_SESSION['email']==false)
-            echo '<a href="./inscription.php"><span>S inscire</span></a></li>';
+            echo '<a href="../inscription.php"><span>Inscrivez-vous</span></a></li>';
         ?>
     <a href="/premium.php">Nos offres premium</a>
 		<span class="line"></span>
@@ -77,6 +77,8 @@
     <p>Prenez avec attention et minutie la queue de la banane et tirez la vers vous avec une force centrifuge de 0.01g (je dis peut-être des bétises
     parce que j'ai arrêté les maths en première au lycée, soyez indulgents je fais de mon mieux.)</p>
 
+    <h3>5- Dégustez la banane</h3>
+    <p>Maintenant vous pouvez déguster votre belle banane félicitations!</p>
 
 
   

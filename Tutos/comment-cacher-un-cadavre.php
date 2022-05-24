@@ -31,7 +31,7 @@
         <?php
         session_start();
         if($_SESSION['email']==true){
-            echo '<a href="./landing.php">'.$_SESSION["email"].'</a>';
+            echo '<a href="./landing.php">'.$_SESSION["pseudo"].'</a>';
         }
         elseif($_SESSION['email']==false)
             echo '<a href="./connexion.php"><span>se connecter</span></a></li>';
@@ -43,7 +43,7 @@
             echo '<a href="./deconnexion.php"><span>Se déconnecter</span>';
         }
         elseif($_SESSION['email']==false)
-            echo '<a href="./inscription.php"><span>S inscire</span></a></li>';
+            echo '<a href="./inscription.php"><span>Inscrivez-vous</span></a></li>';
         ?>
     <a href="/premium.php">Nos offres premium</a>
 		<span class="line"></span>
@@ -67,16 +67,20 @@
 <h3>1- Vérifier les environs</h3>
 <img class="illu" src="/medias/kiwi-analyse.webp">
   
-<p>fo regrader si ya de sjen otour
+<p>Observez les environs, il ne doit pas y avoir un seul témoin de votre plan ou vous serez en danger
 </p>
 
-<h3>2- aaaaaaaaaa</h3>
-  <p>cacher cadave il y a pliens d esoluvd</p>
+<h3>2- Ne laisser aucune trace</h3>
+  <p>Evitez à tout prix de laisser des traces de votre identité sur le cadavre, emprunte, cheveux, ... Si possible, prenez des gants et attachez vos cheveux/ couvrez-les
+  pour ne laisser aucun indice</p>
 
 
-<h3>3- j'ai chaudddd</h3>
-<p>je mourru</p>
+<h3>3- Première solution: Brulez le corps</h3>
+<p>Le feu permet d'effacer toute trace d'un cadavre, si vous le faites bien, mais vous aurez besoin d'une grande puissance de feu, cela risque de se voir
+si vous n'êtes pas assez discrets. </p>
 
+    <h3>4- Enterrez cadavre sous une espèce protégée de plante </h3>
+    <p>Comme ça c'est illégal de déterrer la zone hihihihihi</p>
 
 </div>
 

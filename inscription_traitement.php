@@ -6,15 +6,18 @@
 	    $nom = htmlspecialchars($_POST['nom']);
 	    $prenom = htmlspecialchars($_POST['prenom']);
         $pseudo = htmlspecialchars($_POST['pseudo']);
-        $image = htmlspecialchars($_POST['image']);
         $email = htmlspecialchars($_POST['email']);
         $password = htmlspecialchars($_POST['password']);
         $password_retype = htmlspecialchars($_POST['password_retype']);
         $centres_interets = htmlspecialchars($_POST['centres_interets']);
 
+        $imgData = file_get_contents($_FILES['pp']['tmp_name']);
+        $imgType = getimagesize($_FILES['pp']['tmp_name'])["mime"];
+
+
         $email = strtolower($email);
         
-        $check = $bdd->prepare('SELECT pseudo, image, email, password, nom, prenom, centres_interets FROM utilisateurs WHERE email = ?');
+        $check = $bdd->prepare('SELECT pseudo, pp, pp_size, email, password, nom, prenom, centres_interets FROM utilisateurs WHERE email = ?');
         $check->execute(array($email));
         $data = $check->fetch();
         $row = $check->rowCount();
@@ -26,19 +29,15 @@
                     if(filter_var($email, FILTER_VALIDATE_EMAIL)){ // Si l'email est de la bonne forme
                         if($password === $password_retype){ // si les deux mdp saisis sont bon
 
-                            $cost = ['cost' => 12];
-                            $password = password_hash($password, PASSWORD_BCRYPT, $cost);
-                            
-                            
-                            $ip = $_SERVER['REMOTE_ADDR']; 
+                            $ip = $_SERVER['REMOTE_ADDR'];
 
-
-                            $insert = $bdd->prepare('INSERT INTO utilisateurs(nom, prenom, pseudo, image, email, password, centres_interets, ip, token) VALUES(:nom, :prenom, :pseudo, :image, :email, :password, :centres_interets, :ip, :token)');
+                            $insert = $bdd->prepare('INSERT INTO utilisateurs(nom, prenom, pseudo, pp, pp_type, email, password, centres_interets, ip, token) VALUES(:nom, :prenom, :pseudo, :pp, :pp_type, :email, :password, :centres_interets, :ip, :token)');
                             $insert->execute(array(
                                 'nom' => $nom,
                                 'prenom' => $prenom,
                                 'pseudo' => $pseudo,
-                                'image' => $image,
+                                'pp' =>  $imgData,
+                                'pp_type' =>  $imgType,
                                 'email' => $email,
                                 'password' => $password,
                                 'centres_interets' => $centres_interets,
@@ -47,14 +46,16 @@
 				                'token' => bin2hex(openssl_random_pseudo_bytes(64)),
                             ));
                             //echo $insert->debugDumpParams();
-                            //exit();
-                            header('Location:inscription.php?reg_err=success');
 
-                        }else header('Location: inscription.php?reg_err=password');
-                    }else header('Location: inscription.php?reg_err=email');
-                }else header('Location: inscription.php?reg_err=email_length');
-            }else header('Location: inscription.php?reg_err=pseudo_length');
-        }else header('Location: inscription.php?reg_err=already');
+                                echo var_dump($insert->errorInfo());
+                            //exit();/*
+                            //header('Location:inscription.php?reg_err=success');
+
+                        }else; //header('Location: inscription.php?reg_err=password');
+                    }else; //header('Location: inscription.php?reg_err=email');
+                }else; //header('Location: inscription.php?reg_err=email_length');
+            }else; //header('Location: inscription.php?reg_err=pseudo_length');
+        }else; //header('Location: inscription.php?reg_err=already');
     }
 
    ?>

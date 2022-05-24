@@ -3,14 +3,36 @@
 footer {
   background-color: #DFF5CE;
 
-position: fixed;
-  margin-bottom: auto;
+  position: fixed;
+    margin-bottom: auto;
   bottom: 0;
-   left: 0;
-  right: 0;
+    left:0;
+    right: 0;
   font-family: Epilogue;
   font-weight: 300;
   
+}
+
+footer button{
+    background: #89B423;
+    border-radius: 0 40px 40px 0;
+    border: none;
+    color: black;
+    padding: 10px;
+    margin: 15px;
+    margin-left: 0;
+    font-size: 1em;
+    font-weight: bold;
+
+}
+
+footer input.navsearch{
+    padding: 10px;
+    margin: 15px;
+    margin-right: 0;
+    border-radius:40px 0 0 40px;
+    font-size: 1em;
+    border: none;
 }
 
 .logo_img{
@@ -43,15 +65,22 @@ header{
   margin-top: auto;
   margin-bottom: auto;
 }
+
+.links > a:focus {
+    color: #89B423;
+}
+
 .links > a:hover {
 	background: #ffffff06;
 	color: #89B423;
+    text-decoration: none;
 }
 .links > .line {
 	background: #89B423;
 	height: 2px;
 	pointer-events: none;
 }
+
 
 /* fonctions du header */
 #header {
@@ -93,9 +122,8 @@ header{
 .navsearch{
   padding: 10px;
   margin: 15px;
+    border-radius: 40px;
   border: none;
-  border-radius:40px;
-  border-color: #89B423;
   font-size: 1em;
 
 }

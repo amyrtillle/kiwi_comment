@@ -31,7 +31,7 @@
         <?php
         session_start();
         if($_SESSION['email']==true){
-            echo '<a href="./landing.php">'.$_SESSION["email"].'</a>';
+            echo '<a href="./landing.php">'.$_SESSION["pseudo"].'</a>';
         }
         elseif($_SESSION['email']==false)
             echo '<a href="./connexion.php"><span>se connecter</span></a></li>';
@@ -43,7 +43,7 @@
             echo '<a href="./deconnexion.php"><span>Se déconnecter</span>';
         }
         elseif($_SESSION['email']==false)
-            echo '<a href="./inscription.php"><span>S inscire</span></a></li>';
+            echo '<a href="./inscription.php"><span>Inscrivez-vous</span></a></li>';
         ?>
     <a href="/premium.php">Nos offres premium</a>
 		<span class="line"></span>
@@ -54,32 +54,14 @@
 
 
 <h1 id="titre">Comment fixer du regard</h1>
-<div>
 
-<p> Pour monter la pression ou prouver votre determination...  </p>
-</div>
+<p> Pour monter la pression ou prouver votre détermination... Fixer du regard n'est pas une chose facile, surtout sur une longue durée  </p>
 
-<div>
-
-<h2 class="titre1">Tutoriel</h2>
+    <h3>1- Concentrez vous</h3>
+    <p></p>
 
 
-<h3>1- Analyser le plat en face de soi</h3>
-<img class="illu" src="/medias/kiwi-analyse.webp">
-  
-<p>Tout d'abord commencez par étudiez votre adversaire. Le plat comprend-il de la sauce? Des fruits ou des légumes particuliers? 
-</p>
 
-<h3>2- Analyser les enjeux et les risques de votre repas</h3>
-  <p>Portez-vous des vêtements clairs? Foncés? Sont-ils cher à vos yeux ou non?
-Pensez que plus votre vêtement sera clair, plus les taches de nourriture seont visibles.</p>
-
-
-<h3>3- Protégez vous en conséquence</h3>
-<p>La méthode la plus courante reste le sopalin / la serviette de table posée sur ses jambes ou contre la poitrine.</p>
-</p>
-
-</div>
 
 
    <div id="cookiePopup">

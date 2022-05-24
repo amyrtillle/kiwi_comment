@@ -41,7 +41,7 @@
 
     <link rel="icon" href="/medias/logo.svg">
 
-    <title>kiwi Comment se faire des amis</title>
+    <title>kiwi Comment gagner de l'argent</title>
 </head>
 
 <body>
@@ -54,7 +54,7 @@
         <?php
         session_start();
         if($_SESSION['email']==true){
-            echo '<a href="./landing.php">'.$_SESSION["email"].'</a>';
+            echo '<a href="./landing.php">'.$_SESSION["pseudo"].'</a>';
         }
         elseif($_SESSION['email']==false)
             echo '<a href="./connexion.php"><span>se connecter</span></a></li>';
@@ -66,7 +66,7 @@
             echo '<a href="./deconnexion.php"><span>Se déconnecter</span>';
         }
         elseif($_SESSION['email']==false)
-            echo '<a href="./inscription.php"><span>S inscire</span></a></li>';
+            echo '<a href="./inscription.php"><span>Inscrivez-vous</span></a></li>';
         ?>
         <a href="/premium.php">Nos offres premium</a>
         <span class="line"></span>
@@ -78,11 +78,15 @@
 
     <h1 id="titre">Comment gagner de l'argent</h1>
 
-    <h3>1-</h3>
+    <h3>1- Gagner à l'Euromillion</h3>
+    <p>C'est la tecnhique la plus radicale, mais connaissez vous les probabilités de gagner le jackpot à l'Euromillon?
+    Autant vous spoil tout de suite elles sont ridicules, mais peut-être que VOUS avez le pouvoir!</p>
 
-    <h3>2-  </h3>
+    <h3>2- Investir dans les NFT </h3>
+    <p> Un moyen très peu écologique mais efficace! Attention aux arnaques. Kiwi Comment ne va prendre aucune responsabilité si vous vous ruinez. </p>
 
-    <h3>3- </h3>
+    <h3>3- Trouvez un job </h3>
+    <p> Cherchez un job à Pole Emploi, moins efficace que de gagner à l'Euromillion mais cela reste utile et surtout plus possible en termes de probabilités. </p>
 
 
 

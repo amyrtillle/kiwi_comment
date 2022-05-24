@@ -31,19 +31,19 @@
         <?php
         session_start();
         if($_SESSION['email']==true){
-            echo '<a href="./landing.php">'.$_SESSION["email"].'</a>';
+            echo '<a href="../landing.php">'.$_SESSION["pseudo"].'</a>';
         }
         elseif($_SESSION['email']==false)
-            echo '<a href="./connexion.php"><span>se connecter</span></a></li>';
+            echo '<a href="../connexion.php"><span>se connecter</span></a></li>';
         ?>
 
         <?php
         session_start();
         if($_SESSION['email']==true){
-            echo '<a href="./deconnexion.php"><span>Se déconnecter</span>';
+            echo '<a href="../deconnexion.php"><span>Se déconnecter</span>';
         }
         elseif($_SESSION['email']==false)
-            echo '<a href="./inscription.php"><span>S inscire</span></a></li>';
+            echo '<a href="../inscription.php"><span>Inscrivez-vous</span></a></li>';
         ?>
     <a href="/premium.php">Nos offres premium</a>
 		<span class="line"></span>
@@ -91,7 +91,13 @@ Avant tout achat il est primordial de connaître vos mesures afin de ne pas fair
 <br>Ce n'est pas très grave, les cosplays s'achètent aussi sur internet, attention la qualité peut parfois laisser à désirer.</p>
 </div>
 
+    <h3>4- Découpez vos tissus selon vos mesures</h3>
+    <p> Soyez minutieux et ne coupez pas de travers </p>
 
+    <h3> 5- Ajoutez les derniers détails</h3>
+
+<h3>6- Amusez-vous</h3>
+    <p> Soyez fier de votre travail. Vous pouvez jouer dans la peau du personnage ou non, libre à vous </p>
    <div id="cookiePopup">
     <h4><span id="cookie-text"><img class="cookie-img" src="/medias/Cookie.svg">Utilisation des cookies</span></h4>
     <p>Ce site utilise des cookies ou une technologie similaire, pour améliorer votre expérience et vous proposer des résultats personnalisés, veuillez accepter notre <a href="/confidentialite.php">Politique de confidentialité</a>.</p>

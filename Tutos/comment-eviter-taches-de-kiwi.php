@@ -31,19 +31,19 @@
         <?php
         session_start();
         if($_SESSION['email']==true){
-            echo '<a href="./landing.php">'.$_SESSION["email"].'</a>';
+            echo '<a href="../landing.php">'.$_SESSION["pseudo"].'</a>';
         }
         elseif($_SESSION['email']==false)
-            echo '<a href="./connexion.php"><span>se connecter</span></a></li>';
+            echo '<a href="../connexion.php"><span>se connecter</span></a></li>';
         ?>
 
         <?php
         session_start();
         if($_SESSION['email']==true){
-            echo '<a href="./deconnexion.php"><span>Se déconnecter</span>';
+            echo '<a href="../deconnexion.php"><span>Se déconnecter</span>';
         }
         elseif($_SESSION['email']==false)
-            echo '<a href="./inscription.php"><span>S inscire</span></a></li>';
+            echo '<a href="../inscription.php"><span>Inscrivez-vous</span></a></li>';
         ?>
     <a href="/premium.php">Nos offres premium</a>
 		<span class="line"></span>
@@ -80,7 +80,8 @@ Pensez que plus votre vêtement sera clair, plus les taches de nourriture seont 
 </p>
 
   <h3>4- Ce n'est pas suffisant?</h3>
-<p>Ne vous inquiétez pas, nous avons la solution. Si la serviette ne marche pas et que vous continuez à faire des taches alors il faut passer à l'étape supérieure, c'est-à-dire à une protection encore plus radicale.</p>
+<p>Ne vous inquiétez pas, nous avons la solution. Si la serviette ne marche pas et que vous continuez à faire des taches alors il faut passer à l'étape supérieure,
+    c'est-à-dire à une protection encore plus radicale. Prenez donc un imperméable et vous voilà sorti d'affaire. </p>
 </div>
 
 

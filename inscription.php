@@ -30,10 +30,10 @@
         <?php
         session_start();
         if($_SESSION['email']==true){
-            echo '<a href="./landing.php">'.$_SESSION["email"].'</a>';
+            echo '<a href="./landing.php">'.$_SESSION["pseudo"].'</a>';
         }
         elseif($_SESSION['email']==false)
-            echo '<a href="./connexion.php"><span>se connecter</span></a></li>';
+            echo '<a href="./connexion.php"><span>Se connecter</span></a></li>';
         ?>
 
         <?php
@@ -42,7 +42,7 @@
             echo '<a href="./deconnexion.php"><span>Se déconnecter</span>';
         }
         elseif($_SESSION['email']==false)
-            echo '<a href="./inscription.php"><span>S inscire</span></a></li>';
+            echo '<a href="./inscription.php"><span>Inscrivez-vous</span></a></li>';
         ?>
     <a href="./premium.php">Nos offres premium</a>
 		<span class="line"></span>
@@ -52,13 +52,14 @@
   <main>
 <div>
 
-  <form class="login-form" action="inscription_traitement.php" method="post">
+  <form class="login-form" action="inscription_traitement.php" method="post" enctype="multipart/form-data">
                 <h2 class="text-center">Inscription</h2>
-
+<div class="ppp">
                 <div class="drop-zone">
                     <span class="drop-zone__prompt">Déposez votre photo ou cliquez ici pour sélectionner votre image</span>
-                    <input type="file" name="myFile" class="drop-zone__input" accept="image/*" required>
+                    <input type="file" name="pp" class="drop-zone__input" accept="image/*" required>
                 </div>
+</div>
 
                 <div class="form-group">
                     <input type="text" name="nom" class="form-control" placeholder="Nom" required="required" autocomplete="off">
@@ -95,13 +96,13 @@
       </div>
 
       <div>
-          <input type="checkbox" id="Sport" name="centres_interets" value="Sport">
-          <label for="Sport">Sport</label>
+          <input type="checkbox" id="Décoration" name="centres_interets" value="Décoration">
+          <label for="décoration">Décoration</label>
       </div>
 
       <div>
           <input type="checkbox" id="Art" name="centres_interets" value="Art">
-          <label for="Art">Art</label>
+          <label for="art">Art</label>
       </div>
 
 

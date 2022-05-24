@@ -31,7 +31,7 @@
         <?php
         session_start();
         if($_SESSION['email']==true){
-            echo '<a href="./landing.php">'.$_SESSION["email"].'</a>';
+            echo '<a href="./landing.php">'.$_SESSION["pseudo"].'</a>';
         }
         elseif($_SESSION['email']==false)
             echo '<a href="./connexion.php"><span>se connecter</span></a></li>';
@@ -43,7 +43,7 @@
             echo '<a href="./deconnexion.php"><span>Se déconnecter</span>';
         }
         elseif($_SESSION['email']==false)
-            echo '<a href="./inscription.php"><span>S inscire</span></a></li>';
+            echo '<a href="./inscription.php"><span>Inscrivez-vous</span></a></li>';
         ?>
     <a href="/premium.php">Nos offres premium</a>
 		<span class="line"></span>
@@ -74,9 +74,25 @@
         et d'un sceau d'eau pour récupérer l'obsidienne</p>
 
 
+<h3>6- Aller dans le Nether</h3>
+<p>Pour trouver et activer le portail de l'End il faut faire des yeux de l'Ender, la recette constituant un oeil d'enderman et d ela poudre de Blaze.
+préparez vous en conséquence, le Nether est dangereux, que ce soit par ses monstres, sa lave et la map. Prenez beaucoup de nourriture pour vous soigner,
+du bois en réserve ainsi que du fer/ diamant pour ne jamais manquer de ressource. Prenez aussi beaucoup de blocs de pierre pour vous frayer un chemin
+plus facilement à travers le vide et les lacs de lave. Si vous avez l'occasion de vous faire des potions de résistance au feu n'hésitez pas
+cela pourrait bien vous sauver. Il n'y a pas de cycl jour/nuit dans le nether et si vous mettez un lit pour mettre votre point d'apparition vous exploserez.</p>
 
+    <h3>7- Se diriger vers le Stronghold</h3>
+    <p> Sortez du nether et utilisez vos yeux de l'end qui vont vous montrer la direction du portail, suivez la direction pendant un bon moment.
+        N'utilisez pas tous vos yeux de l'ender car vous en aurez besoin pour activer le portail.</p>
 
-  
+    <h3>8- Trouver le portail</h3>
+  <p>Le stronghold est long et c'est un vrai labyrinthe rempli de monstres et de ressources intéresantes</p>
+
+    <h3>8- Combattre l'Ender Dragon</h3>
+    <p> Prenez un sceau d'eau pour ne pas faire une chute terrible, de la nourriture, ...
+    Détruisez les cristaux en haut des tours d'obsidienne pour empêcher au dragon de se régnérer. Vous pouvez utiliser un arc
+        ou les frapper directement avec une épée ou une hache (posez un bloc devant vous pour amoindrir le choc de l'explosion et
+        éviter de vous propulser dans les airs</p>
 
 
 

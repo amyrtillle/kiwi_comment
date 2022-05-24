@@ -31,19 +31,19 @@
         <?php
         session_start();
         if($_SESSION['email']==true){
-            echo '<a href="./landing.php">'.$_SESSION["email"].'</a>';
+            echo '<a href="../landing.php">'.$_SESSION["pseudo"].'</a>';
         }
         elseif($_SESSION['email']==false)
-            echo '<a href="./connexion.php"><span>se connecter</span></a></li>';
+            echo '<a href="../connexion.php"><span>se connecter</span></a></li>';
         ?>
 
         <?php
         session_start();
         if($_SESSION['email']==true){
-            echo '<a href="./deconnexion.php"><span>Se déconnecter</span>';
+            echo '<a href="../deconnexion.php"><span>Se déconnecter</span>';
         }
         elseif($_SESSION['email']==false)
-            echo '<a href="./inscription.php"><span>S inscire</span></a></li>';
+            echo '<a href="../inscription.php"><span>Inscrivez-vous</span></a></li>';
         ?>
     <a href="/premium.php">Nos offres premium</a>
 		<span class="line"></span>
@@ -58,11 +58,11 @@
   <p> Vous en avez assez de vivre dans la solitude? Vous voulez que des gens s'intéressent à vous? Ce tuto est fait pour vous.
 <br> Un ami est une personne sur qui on peut compter, une personne de confiance et qui partage plus ou moins vos centres d'intérêts. 
   </p>
-<h3>1-</h3>
+<h3>1- Franchissez le premier pas  </h3>
 
-<h3>2-  </h3>
+<h3>2- ... </h3>
 
-<h3>3- </h3>
+<h3>3- J'ai pas d'ami non plus pourquoi je fais ça </h3>
 
 
 

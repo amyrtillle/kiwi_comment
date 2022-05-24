@@ -31,19 +31,19 @@
         <?php
         session_start();
         if($_SESSION['email']==true){
-            echo '<a href="./landing.php">'.$_SESSION["email"].'</a>';
+            echo '<a href="../landing.php">'.$_SESSION["pseudo"].'</a>';
         }
         elseif($_SESSION['email']==false)
-            echo '<a href="./connexion.php"><span>se connecter</span></a></li>';
+            echo '<a href="../connexion.php"><span>se connecter</span></a></li>';
         ?>
 
         <?php
         session_start();
         if($_SESSION['email']==true){
-            echo '<a href="./deconnexion.php"><span>Se déconnecter</span>';
+            echo '<a href="../deconnexion.php"><span>Se déconnecter</span>';
         }
         elseif($_SESSION['email']==false)
-            echo '<a href="./inscription.php"><span>S inscire</span></a></li>';
+            echo '<a href="../inscription.php"><span>Inscrivez-vous</span></a></li>';
         ?>
     <a href="/premium.php">Nos offres premium</a>
 		<span class="line"></span>
@@ -74,6 +74,8 @@
     <img class="illu" src="/medias/ikea2.jpg">
     <p> Si vous vous égarez dans une zone, n'oubliez pas l'existence des flèches au sol qui pourront vous guider vers le chemin principal</p>
 
+        <h3> 4- Demandez aux personels ou des inconnus le chemin</h3>
+    <p>Vous pouvez toujours demander le chemin aux passants aux inconnus, attention si on vous propose des bonbons dans une camionnette ce n'est PAS une bonne idée.</p>
 
 </div>
 

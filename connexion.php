@@ -30,7 +30,7 @@
         <?php
         session_start();
         if($_SESSION['email']==true){
-            echo '<a href="./landing.php">'.$_SESSION["email"].'</a>';
+            echo '<a href="./landing.php">'.$_SESSION["pseudo"].'</a>';
         }
         elseif($_SESSION['email']==false)
             echo '<a href="./connexion.php"><span>se connecter</span></a></li>';
@@ -42,7 +42,7 @@
             echo '<a href="./deconnexion.php"><span>Se déconnecter</span>';
         }
         elseif($_SESSION['email']==false)
-            echo '<a href="./inscription.php"><span>S inscire</span></a></li>';
+            echo '<a href="./inscription.php"><span>Inscrivez-vous</span></a></li>';
         ?>
         <a href="./premium.php">Nos offres premium</a>
         <span class="line"></span>
@@ -78,7 +78,7 @@
         <div>
             <form action="newsletter_traitement.php" method="post">
                 <input type="email" class="navsearch" name="email_news" placeholder="S'inscrire à la newletter">
-                <button type="submit">S'inscire</button>
+                <button type="submit">S'inscrire</button>
             </form>
         </div>
 
