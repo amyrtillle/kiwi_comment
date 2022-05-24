@@ -51,6 +51,14 @@
 </header>
 
 <main>
+    <?php
+    session_start();
+    if($_SESSION['email']==true){
+        echo '<a href="./landing.php">'.$_SESSION["pseudo"].'</a>';
+        ?>
+
+
+
     <div>
 
         <form class="login-form" action="tutos_traitement.php" method="post" enctype="multipart/form-data">
@@ -99,6 +107,13 @@
 
 
     </div>
+
+        <?php
+    }
+    elseif($_SESSION['email']==false)
+        echo 'L accès à ce contenu vous est restreint';
+    ?>
+
 
 </main>
 <footer>

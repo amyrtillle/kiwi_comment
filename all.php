@@ -25,7 +25,7 @@
   <header id="header">
 	<nav class="links" style="--items: 7;">
     <a href="./index.php"><img class="logo_img" src="./medias/logo_text.png"></a>
-    <a href="#"><input type="text" class="navsearch" placeholder="Recherche.." formaction="search_traitement.php" formmethod="POST"></a>
+    <a href="#"><input type="text" class="navsearch" placeholder="Recherche.." formaction="search.php" formmethod="GET"></a>
 		<a href="./all.php">Les tutos</a>
 		<a href="./contact.php">Contact</a>
         <?php

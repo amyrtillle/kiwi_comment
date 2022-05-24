@@ -23,7 +23,7 @@
         $row = $check->rowCount();
 
 
-        if($row == 0){ 
+        if($row == 0){
             if(strlen($pseudo) <= 100){ // On verifie que la longueur du pseudo <= 100
                 if(strlen($email) <= 100){ // On verifie que la longueur du mail <= 100
                     if(filter_var($email, FILTER_VALIDATE_EMAIL)){ // Si l'email est de la bonne forme
@@ -47,15 +47,14 @@
                             ));
                             //echo $insert->debugDumpParams();
 
-                                echo var_dump($insert->errorInfo());
                             //exit();/*
-                            //header('Location:inscription.php?reg_err=success');
+                            header('Location:inscription.php?reg_err=success');
 
-                        }else; //header('Location: inscription.php?reg_err=password');
-                    }else; //header('Location: inscription.php?reg_err=email');
-                }else; //header('Location: inscription.php?reg_err=email_length');
-            }else; //header('Location: inscription.php?reg_err=pseudo_length');
-        }else; //header('Location: inscription.php?reg_err=already');
+                        }else; header('Location: inscription.php?reg_err=password');
+                    }else; header('Location: inscription.php?reg_err=email');
+                }else; header('Location: inscription.php?reg_err=email_length');
+            }else; header('Location: inscription.php?reg_err=pseudo_length');
+        }else; header('Location: inscription.php?reg_err=success');
     }
 
    ?>

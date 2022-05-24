@@ -215,7 +215,7 @@
       <div>
         <form action="newsletter.php" method="post">
         <input type="email" class="navsearch" placeholder="S'inscrire à la newletter">
-          <input type="submit" value="S'inscrire" name="submit_form"/>
+            <button type="submit">S'inscrire</button>
         </form>
       </div>
 
